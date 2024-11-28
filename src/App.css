@@ -32,7 +32,6 @@
     align-items: center; 
     justify-content: center; 
 }
- 
 
 .icon {
     width: 40px;
@@ -47,3 +46,38 @@
     text-align: center;
 }
  
+.home-con
+{
+    display: flex;
+    position: relative;
+}
+
+.filterbox
+{
+    width:240px;
+    height:300px;
+    background-color: rgb(210, 228, 244);
+    border-radius: 0% 5% 5% 0%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    left:0;
+    top:31%;
+    position: fixed;
+    gap:-10px;
+}
+
+.items-con
+{
+    width:80vw;
+    background-color: aquamarine;
+    display: inline-block;
+    margin-left:18%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
