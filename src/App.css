@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    overflow: hidden;
+    box-sizing: border-box;
  }
  
  .logo {
@@ -17,16 +19,31 @@
      border-radius: 30%;
  }
  
- .navitems {
+ .navitems1 ,.navitems2 {
      display: flex;
      gap: 20px; 
+     align-items: center;
  }
+
+
+.navitem {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
  
- .navitems img {
-     width: 40px;
-     height: 40px;
-     cursor: pointer;
-     box-shadow: 2px 2px 10px rgb(24, 24, 24);
-     border-radius: 30%;
- }
+
+.icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.navitem p {
+    color: black;
+    font-size: 1rem;
+    margin: 5px 0 0 0; 
+    text-align: center;
+}
  
