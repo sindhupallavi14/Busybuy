@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom"
 
-
-export default function Items({title,image,description,price})
+export default function Items({title,image,price})
 {
-
+    const navigate=useNavigate();
+    function handleCart()
+    {
+      navigate("/cart");
+    }
     return(
         <div className="item-card">
            <div className="item-img">
@@ -12,7 +16,7 @@ export default function Items({title,image,description,price})
               <h4>{title}</h4>
            </div>
            <div className="price">${price}</div>
-           <button className="cart-btn" onClick={()=>{}}>Add to cart</button>
+           <button className="cart-btn" onClick={handleCart}>Add to cart</button>
 
         </div>
     )

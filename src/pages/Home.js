@@ -1,11 +1,15 @@
 import { useState } from "react"
 import Items from "./Items";
 import { Data } from "../data/itemdata";
+import Cart from "./cart";
 
 
 export default function Home()
 {
     const [val,setVal]=useState(0);
+   
+
+   
     return(
         <div className="home-con">
            <div className="filterbox">
@@ -15,11 +19,16 @@ export default function Home()
                 onChange={(e) =>setVal(e.target.value)}/>
             </div>
             <div className="items-con">
-               {Data.map((item)=>
-                    (
-                        <Items key={item.id} title={item.title} price={item.price} description={item.description} image={item.image}/>
-                    ))
-               }
+            {Data.map((item) => (
+                    <Items
+                        key={item.id}
+                        title={item.title}
+                        price={item.price}
+                        description={item.description}
+                        image={item.image}
+                       
+                    />
+                ))}
             </div>
         </div> 
     )

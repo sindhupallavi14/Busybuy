@@ -4,45 +4,61 @@ import home from "../assets/home.png";
 import cart from "../assets/cart.png";
 import logout from "../assets/log-out.png";
 import signin from "../assets/Signin.png";
-import { useState } from "react";
+import { NavLink, Outlet } from "react-router-dom";
 
-export default function Navbar() {
-    const [isloggedin,setIsloggedin]=useState(false);
+
+export default function Navbar({setIsLoggedIn,isLoggedIn}) {
+
+    console.log("Navbar isLoggedIn:", isLoggedIn);
+
     return (
+       <>
         <div className="nav">
-            <img className="logo" src={logo} alt="Busy buy" />
+           <NavLink to="/"> <img className="logo" src={logo} alt="Busy buy" /></NavLink>
  
 
-           {!isloggedin ? (  <div className="navitems1">
+           {!isLoggedIn  ? (  <div className="navitems1">
                 <div className="navitem">
-                    <img className="icon" src={home} alt="home" />
-                    <p>Home</p>
+                    <NavLink className="navlink" to="/">
+                        <img className="icon" src={home} alt="home" />
+                        <p>Home</p>
+                    </NavLink>
                 </div>
                 <div className="navitem">
-                    <img className="icon" src={signin} alt="logout" />
-                    <p>Sign-in</p>
+                    <NavLink className="navlink" to="/signin">
+                        <img className="icon" src={signin} alt="signin" />
+                        <p>Sign-in</p>
+                    </NavLink >
                 </div>
             </div>
             ):( <div className="navitems2">
                 <div className="navitem">
-                    <img className="icon" src={home} alt="home" />
-                    <p>Home</p>
+                    <NavLink className="navlink" to="/">
+                        <img className="icon" src={home} alt="home" />
+                        <p>Home</p>
+                    </NavLink >
                 </div>
                 <div className="navitem">
-                    <img className="icon" src={order} alt="order" />
-                    <p>Order</p>
+                    <NavLink className="navlink" to="/order">
+                        <img className="icon" src={order} alt="order" />
+                        <p>Order</p>
+                    </NavLink >
                 </div>
                 <div className="navitem">
-                    <img className="icon" src={cart} alt="cart" />
-                    <p>Cart</p>
+                    <NavLink className="navlink" to='/cart'>
+                        <img className="icon" src={cart} alt="cart" />
+                        <p>Cart</p>
+                    </NavLink>
                 </div>
-                <div className="navitem">
+                <div className="navitem" onClick={()=>setIsLoggedIn(false)}>
                     <img className="icon" src={logout} alt="logout" />
                     <p>Logout</p>
                 </div>
             </div>)}
-          
+           
            
         </div>
+        <Outlet/>
+       </>
     );
 }

@@ -144,3 +144,69 @@
     color: #7064e5;
     cursor: pointer;
 }
+
+.signin-con
+{
+    width: 100vw;
+    height: 50vh;
+    margin-top:3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    position: relative;
+}
+
+.signin-con input
+{
+    width:16%;
+    height:13%;
+    padding-left:15px ;
+    border: 1px solid #7064e5;
+    border-radius: 6px;  
+}
+
+.signin-btn{
+  position: absolute;
+  background-color: #7064e5;
+  width:17%;
+  height:12%;
+  font-size: 1.3rem;
+  top:85%;
+  border: 1px solid #7064e5;
+  border-radius: 6px; 
+}
+
+.signin-btn:hover
+{
+    background-color: white;
+    border: 1px solid #7064e5;
+    color: #7064e5;
+    cursor: pointer;
+}
+
+.signup
+{
+    position: absolute;
+    top:94%;
+    cursor: pointer;
+    left:42%; 
+}
+
+.signin-con h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(72, 69, 87);
+    font-size: 2.4rem;
+}
+
+
+.signin-con h4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(94, 94, 97);
+}
+
+.navlink
+{
+    text-decoration: none;
+}
