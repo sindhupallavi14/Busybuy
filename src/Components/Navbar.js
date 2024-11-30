@@ -5,12 +5,12 @@ import cart from "../assets/cart.png";
 import logout from "../assets/log-out.png";
 import signin from "../assets/Signin.png";
 import { NavLink, Outlet } from "react-router-dom";
+import { useAppContext } from "./context";
 
 
-export default function Navbar({setIsLoggedIn,isLoggedIn}) {
-
-    console.log("Navbar isLoggedIn:", isLoggedIn);
-
+export default function Navbar() {
+    
+    const {setIsLoggedIn,isLoggedIn}=useAppContext();
     return (
        <>
         <div className="nav">

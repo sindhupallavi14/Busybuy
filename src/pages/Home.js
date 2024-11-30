@@ -1,25 +1,23 @@
 import { useState } from "react"
 import Items from "./Items";
-import { Data } from "../data/itemdata";
-import Cart from "./cart";
-
+import { useAppContext } from "../components/context";
 
 export default function Home()
 {
     const [val,setVal]=useState(0);
-   
+    const {items,addItemsToFirebase}=useAppContext();
 
-   
     return(
         <div className="home-con">
            <div className="filterbox">
                <h2>Filter</h2>
                 <p>Price:{val}</p>
-                <input type="range" id="myRange" name="volume" min="0" max="99999" value={val} className="range"
+                <input type="range" id="myRange" name="volume" min="0" max="9999" value={val} className="range"
                 onChange={(e) =>setVal(e.target.value)}/>
             </div>
             <div className="items-con">
-            {Data.map((item) => (
+           
+            {items.map((item) => (
                     <Items
                         key={item.id}
                         title={item.title}
