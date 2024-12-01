@@ -7,7 +7,6 @@ import signin from "../assets/Signin.png";
 import { NavLink, Outlet } from "react-router-dom";
 import { useAppContext } from "./context";
 
-
 export default function Navbar() {
     
     const {setIsLoggedIn,isLoggedIn}=useAppContext();
@@ -15,8 +14,6 @@ export default function Navbar() {
        <>
         <div className="nav">
            <NavLink to="/"> <img className="logo" src={logo} alt="Busy buy" /></NavLink>
- 
-
            {!isLoggedIn  ? (  <div className="navitems1">
                 <div className="navitem">
                     <NavLink className="navlink" to="/">

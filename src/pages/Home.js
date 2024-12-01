@@ -5,7 +5,7 @@ import { useAppContext } from "../components/context";
 export default function Home()
 {
     const [val,setVal]=useState(0);
-    const {items,addItemsToFirebase}=useAppContext();
+    const {items}=useAppContext();
 
     return(
         <div className="home-con">

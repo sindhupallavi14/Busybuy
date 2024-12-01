@@ -178,14 +178,6 @@
   border-radius: 6px; 
 }
 
-.signin-btn:hover
-{
-    background-color: white;
-    border: 1px solid #7064e5;
-    color: #7064e5;
-    cursor: pointer;
-}
-
 .signup-btn{
   position: absolute;
   background-color: #7064e5;
@@ -195,14 +187,6 @@
   top:95%;
   border: 1px solid #7064e5;
   border-radius: 6px; 
-}
-
-.signup-btn:hover
-{
-    background-color: white;
-    border: 1px solid #7064e5;
-    color: #7064e5;
-    cursor: pointer;
 }
 
 .signup
@@ -219,7 +203,6 @@
     font-size: 2.4rem;
 }
 
-
 .signin-con h4{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(94, 94, 97);
@@ -228,4 +211,31 @@
 .navlink
 {
     text-decoration: none;
+}
+
+.tot-con
+{
+    width:190px;
+    height:140px;
+    background-color: rgb(210, 228, 244);
+    border-radius: 5%;
+    display: flex;
+    padding-top: 10px;
+    align-items:center;
+    flex-direction: column;
+    left:5px;;
+    top:21%;
+    position: fixed;
+}
+
+.purchase-btn
+{
+    background-color: #7064e5;
+    width:55%;
+    height:20%;
+    font-size: 1.1rem;
+    top:95%;
+    border: 1px solid #7064e5;
+    border-radius: 6px; 
+    cursor: pointer;
 }
