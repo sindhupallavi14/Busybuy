@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Busybuy/static/css/main.b9d76da7.css",
-    "main.js": "/Busybuy/static/js/main.6ff7c4e0.js",
+    "main.js": "/Busybuy/static/js/main.ca0beb45.js",
     "static/media/cart.png": "/Busybuy/static/media/cart.f70a01629a82e2c4c310.png",
     "static/media/log-out.png": "/Busybuy/static/media/log-out.a689fe4c5b44d0affd15.png",
     "static/media/home.png": "/Busybuy/static/media/home.05d828b9bb1c4256d92e.png",
@@ -9,10 +9,10 @@
     "static/media/order.png": "/Busybuy/static/media/order.adce28b81d1271d06e65.png",
     "index.html": "/Busybuy/index.html",
     "main.b9d76da7.css.map": "/Busybuy/static/css/main.b9d76da7.css.map",
-    "main.6ff7c4e0.js.map": "/Busybuy/static/js/main.6ff7c4e0.js.map"
+    "main.ca0beb45.js.map": "/Busybuy/static/js/main.ca0beb45.js.map"
   },
   "entrypoints": [
     "static/css/main.b9d76da7.css",
-    "static/js/main.6ff7c4e0.js"
+    "static/js/main.ca0beb45.js"
   ]
 }
