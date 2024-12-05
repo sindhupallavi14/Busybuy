@@ -1,11 +1,14 @@
-import { useNavigate } from "react-router-dom"
 
-export default function Items({title,image,price})
+import { useAppContext } from "../components/context";
+
+export default function Items({title,image,price,id})
 {
-    const navigate=useNavigate();
+    const {cart,setCart,addToCart}=useAppContext();
+
     function handleCart()
     {
-      navigate("/cart");
+      const item={id,title,image,price};
+      addToCart(item);
     }
     return(
         <div className="item-card">

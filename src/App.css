@@ -51,10 +51,26 @@
     position: relative;
 }
 
+
+.search{
+    position: absolute;
+    left:40%;
+    top:2%;
+}
+
+.search input{
+    width:17vw;
+    height:6vh;
+    padding-left:15px ;
+    border: 1px solid #7064e5;
+    border-radius: 6px;  
+    font-size: 1.3rem;
+}
+
 .filterbox
 {
     width:240px;
-    height:300px;
+    height:320px;
     background-color: rgb(210, 228, 244);
     border-radius: 0% 5% 5% 0%;
     display: flex;
@@ -66,6 +82,7 @@
     position: fixed;
     gap:-10px;
     flex-wrap: wrap;
+    box-sizing:border-box;
 }
 
 .range
@@ -126,6 +143,41 @@
   left:12px;
   top:82%;
 }
+.cart-price
+{
+    position:absolute;
+    top:80%;
+    left:12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quantity
+{
+    position: absolute;
+    left:170px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.inc,.dec
+{
+    margin-top: 10px;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+.inc{
+    position: absolute;
+    left:130px;
+}
+
+.dec{
+    position: absolute;
+    left:195px;
+}
+
 .cart-btn{
   position: absolute;
   background-color: #7064e5;
@@ -213,6 +265,36 @@
     text-decoration: none;
 }
 
+.cart-items
+{
+    width:80vw;
+    display: inline-block;
+    margin-left:18%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;  
+  
+}
+.rmv-cart-btn
+{
+  position: absolute;
+  background-color: #ff2448;
+  width:90%;
+  height:8%;
+  font-size: 1.2rem;
+  top:90%;
+  right:14px;
+  border: 1px solid #100f17;
+  border-radius: 6px; 
+}
+
+
+.rmv-cart-btn:hover{
+    background-color: white;
+    border: 1px solid #ff2448;
+    color: #ff2448;
+    cursor: pointer;
+}
 .tot-con
 {
     width:190px;
@@ -227,7 +309,6 @@
     top:21%;
     position: fixed;
 }
-
 .purchase-btn
 {
     background-color: #7064e5;
@@ -239,3 +320,35 @@
     border-radius: 6px; 
     cursor: pointer;
 }
+
+.Orders
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+.order-table
+{
+    width: 50vw;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+}
+.order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.category-section
+{
+    font-size: 1.2rem;
+    margin-top: -35px;
+    position: relative;
+    left:-10px;
+    padding-top:35px;
+}
+
