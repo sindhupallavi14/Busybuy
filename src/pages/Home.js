@@ -16,7 +16,7 @@ export default function Home()
     return(
         <div className="home-con">
             <div className="search">
-              <input placeholder="Search" type="text" value={searchitem} onChange={(e)=>setSearchitem(e.target.value)} />
+              <input placeholder="Search" type="search" value={searchitem} onChange={(e)=>setSearchitem(e.target.value)} />
             </div>
             <div className="filterbox">
                 <h2>Filter</h2>
